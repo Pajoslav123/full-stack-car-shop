@@ -4,9 +4,11 @@ import ImageSlider from "./Components/ImageSlider";
 import png1 from "./images/1.png";
 import png2 from "./images/2.png";
 import png3 from "./images/3.png";
-
+import e63 from './images/e63.jpeg';
 import png4 from "./images/4.png";
 import rs6 from "./images/rs62.jpg";
+import m8 from "./images/M8.jpeg";
+import rs7 from "./images/rs7.jpg";
 import audi from "./images/car-logos/audi.png";
 import mercedes from "./images/car-logos/mercedes.png";
 import porsche from "./images/car-logos/porsche.svg";
@@ -92,7 +94,7 @@ function App() {
               </div>
             </div>
             <div className="car-card">
-              <img src={rs6} alt="" />
+              <img src={e63} alt="" />
               <div className="car-info">
                 <div className="price-location">
                   <p className="price">$ 124.556</p>
@@ -105,7 +107,7 @@ function App() {
               </div>
             </div>
             <div className="car-card">
-              <img src={rs6} alt="" />
+              <img src={rs7} alt="" />
               <div className="car-info">
                 <div className="price-location">
                   <p className="price">$ 124.556</p>
@@ -119,7 +121,7 @@ function App() {
             </div>
             
             <div className="car-card">
-              <img src={rs6} alt="" />
+              <img src={m8} alt="" />
               <div className="car-info">
                 <div className="price-location">
                   <p className="price">$ 124.556</p>

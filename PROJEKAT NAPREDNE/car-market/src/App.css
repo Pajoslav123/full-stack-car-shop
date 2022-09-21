@@ -199,6 +199,7 @@ nav a:hover{
 .car-card > img {
   max-width:100%;
   height:300px;
+  width:100%;
   object-fit: cover;
   
 }
@@ -233,4 +234,11 @@ nav a:hover{
 .see-all {
   padding:.5rem 2rem;
   background-color: #dd0c0b;
+  transition: 1s ease-in-out;
+}
+
+.see-all:hover {
+  box-shadow: -1px 20px 101px -2px rgba(221,12,11,0.29);
+-webkit-box-shadow: -1px 20px 101px -2px rgba(221,12,11,0.29);
+-moz-box-shadow: -1px 20px 101px -2px rgba(221,12,11,0.29);
 }
