@@ -81,7 +81,7 @@ nav a:hover{
   width:100%;
   height:100%;
   position: absolute;
-  z-index: -1;
+  
   
   object-fit: contain;
   background-position: center;
@@ -138,8 +138,9 @@ nav a:hover{
 }
 .car-logos {
   display:flex;
+  overflow-x: hidden;
   justify-content: space-between;
-  padding:5rem 0;
+  padding:6rem 0 4rem 0;
 }
 .hook {
   padding:3rem 0 5rem 0;
@@ -156,6 +157,9 @@ nav a:hover{
   color:#d8dbdda6;
   
 }
+/* .space-top {
+  margin-top: 50px;
+} */
 .mini-cta p {
   margin-bottom: 1rem;
 }
@@ -180,13 +184,16 @@ nav a:hover{
   margin-top: .5rem;
 }
 .car-listings {
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
 }
 .car-listings-content {
   display:flex;
-  gap: 50px;
+  gap:50px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+.car-listings-content > * {
+  flex-basis: 100%;
 }
 .price-location {
   display:flex;
@@ -208,7 +215,9 @@ nav a:hover{
   background-color:#ffffff;
   border-radius: 2px;
   flex: 0 0 30.3%;
+  min-width: 420px;
 }
+
 .price span {
   color:#dd0c0b;
 }
@@ -241,4 +250,98 @@ nav a:hover{
   box-shadow: -1px 20px 101px -2px rgba(221,12,11,0.29);
 -webkit-box-shadow: -1px 20px 101px -2px rgba(221,12,11,0.29);
 -moz-box-shadow: -1px 20px 101px -2px rgba(221,12,11,0.29);
+}
+
+.hero {
+  width:100%;
+  background-image: url('./images/rsq8-hero2.png');
+  background-size:cover;
+}
+.hero-bg {
+  width:100%;
+}
+.hero-content {
+  padding:10rem 0;
+}
+.hero-heading {
+  color:#eaeef1;
+  font-family: 'Roboto';
+  
+  font-size: clamp(1rem, 3vw,5rem);
+}
+.hero-support {
+  margin-top: .5rem;
+  color:#d8dbdda6;
+}
+.hero-cta {
+  margin-top: 2rem;
+  display:inline-block;
+  background-color: #dd0c0b;
+  padding:.5rem 1rem;
+}
+.autozo {
+  width:auto;
+  height:40px;
+}
+.market-content > * {
+  width:100%;
+}
+.market-content {
+  margin:5rem 0;
+  display:flex;
+}
+.market-content img {
+  border-radius: 4px;
+  width:100%;
+  object-fit: cover;
+}
+.slogan {
+  color:#dd0c0b;
+  font-size: clamp(.4rem, 1.3vw, 3rem);
+}
+.market-description {
+  line-height: 1.9;
+  color:#d8dbdde8;
+  font-size: clamp(.4rem, 1vw, 3rem);
+}
+.spacer-line {
+  margin: 1rem 0;
+  border: 1px solid #dd0c0b;
+  width:120px;
+}
+.market-content .left {
+  margin: auto 0;
+}
+.specs {
+  margin-top: 5rem;
+  color:#d8dbdd ;
+}
+@media only screen and (max-width: 600px) {
+  .car-listings-content {
+    flex-direction: column;
+  }
+  .market-content {
+    flex-direction: column;
+  }
+  .market-content .right {
+    margin-top: 3rem;
+  }
+}
+.specs span {
+  color:#dd0c0b;
+}
+.specs-row {
+  display:flex;
+  align-items: center;
+}
+.small-dash {
+  margin-right: 1rem;
+  border: 1px solid #dd0c0b;
+  height:1px;
+  width:40px;
+}
+.market-title {
+  margin-bottom: 2rem;
+  color:#eaeef1;
+  font-size: clamp(1rem,2.5vw,5rem);
 }
